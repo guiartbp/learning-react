@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.contentForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e8ecef;
+}
+.contentLogin{
+  width: 80%;
+  max-width: 400px;
+}
+.contentLogo{
+  background-color: #0062cd;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentLogo > img{
+  width: 60%;
+}
+.contentInfo{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.contentInfo > .info{
+  color: #9c9d91;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 15px auto;
+}
+.contentInfo > input{
+  height: 35px;
+  margin: 0px auto 10px;
+  width: 90%;
+}
+.contentInfo > input[type='submit']{
+  background-color: #007aff;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+.contentInfo > .forgotPassword {
+  align-self: center;
+  color: #7babd5;
+  font-size: 1.1rem;
+  padding: 10px;
+}
