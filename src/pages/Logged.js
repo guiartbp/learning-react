@@ -11,34 +11,41 @@ import HomeLogged from './HomeLogged';
 import Motivos from './Motivos';
 import Operadores from './Operadores';
 import TaxasTarifas from './TaxasTarifas';
+import Logo from '../components/Logo';
+import '../styles/Logged.css'
 
 const Logged = () => {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
+      <div className="contentTrue">
+        <nav className="contentNav">
+          <Logo />
+          <div className="avatar">
+            <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/neytiri_in_avatar_2-wide-do-we-really-need-avatar-2.jpeg" alt="avatar.png" />
+              <p>Username</p>
+          </div>
+          <ul className="menu">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="link">Home</Link>
             </li>
             <li>
-              <Link to="/clientes">Clientes</Link>
+              <Link to="/clientes" className="link">Clientes</Link>
             </li>
             <li>
-              <Link to="/taxasetarifas">Taxas e Tarifas</Link>
+              <Link to="/taxasetarifas" className="link">Taxas e Tarifas</Link>
             </li>
             <li>
-              <Link to="/faq">FAQ App</Link>
+              <Link to="/faq" className="link">FAQ App</Link>
             </li>
             <li>
-              <Link to="/operadores">Operadores</Link>
+              <Link to="/operadores" className="link">Operadores</Link>
             </li>
             <li>
-              <Link to="/motivos">Motivo</Link>
+              <Link to="/motivos" className="link">Motivo</Link>
             </li>
           </ul>
         </nav>
-        <Switch>
+        <Switch className="ContentFull">
           <Route path="/" exact>
             <HomeLogged />
           </Route>
