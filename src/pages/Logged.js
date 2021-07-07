@@ -24,7 +24,7 @@ const Logged = () => {
                 src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/neytiri_in_avatar_2-wide-do-we-really-need-avatar-2.jpeg"
                 alt="avatar.png"
               />
-              <p>Username</p>
+              <p className="UserAvatarName">Username</p>
             </div>
             <ul className="menu">
               <li>

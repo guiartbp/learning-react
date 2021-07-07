@@ -1,36 +1,39 @@
-.contentTrue{
+.contentTrue {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
   width: 80%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
-.contentNav{
+.contentNav {
   max-width: 300px;
   background-color: blue;
   display: flex;
   flex-direction: column;
-  padding: 20px; 
+  padding: 20px;
 }
-.avatar{
+.avatar {
   display: flex;
   align-items: center;
   padding: 10px;
 }
-.avatar > img{
+.avatar > img {
   margin-right: 5px;
   width: 30px;
   height: 30px;
   border-radius: 15px;
   box-shadow: 1px 2px #00000060;
 }
-.menu{
+.UserAvatarName {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.menu {
   font-size: 1.2rem;
   padding-left: 35px;
   list-style: square;
   grid-area: menu;
-  
 }
-.menu > li > .link{
-  color: #FFFFFF;
+.menu > li > .link {
+  color: #ffffff;
   text-decoration: none;
 }

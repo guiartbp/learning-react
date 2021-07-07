@@ -1,9 +1,10 @@
 import React from 'react';
 import HomeLogged from '../../components/pages/HomeLogged';
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <HomeLogged />
     </>
   );
 };
+export default Home;

@@ -8,8 +8,9 @@ function initialState() {
   return { email: '', password: '' };
 }
 
-function login(email, password) {
+function login({ email, password }) {
   if (email === 'admin@admin.com' && password === 'admin123@') {
+    console.log('hello');
     return { token: '1234' };
   }
   return { error: 'Email ou Senha inválido' };
@@ -17,6 +18,7 @@ function login(email, password) {
 
 const Login = () => {
   const [data, setData] = useState(initialState);
+  const [error, setError] = useState(null);
   const { setToken } = useContext(StoreContext);
   const history = useHistory();
 
@@ -31,11 +33,16 @@ const Login = () => {
   function onSubmit(event) {
     event.preventDefault();
 
-    const { token } = login(data);
+    const { token, error } = login(data);
+
     if (token) {
       setToken(token);
+      console.log('submit');
       return history.push('/');
     }
+
+    setError(error);
+    console.log('erro');
     setData(initialState);
   }
 
@@ -59,7 +66,6 @@ const Login = () => {
             onChange={onChange}
           />
           <button type="submit">Entrar</button>
-          {/* <input type="submit" value="Entrar"/> */}
           <span className="forgotPassword">Esqueci minha senha</span>
         </div>
       </div>
