@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-.contentForm{
+.contentForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,30 +11,40 @@
   width: 100vw;
   background-color: #e8ecef;
 }
-.contentLogin{
+.contentLogin {
   width: 80%;
   max-width: 400px;
 }
 
-.contentInfo{
+.contentInfo {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-.contentInfo > .info{
+.contentInfo > .info {
   color: #9c9d91;
   text-align: center;
   font-size: 1.1rem;
   margin: 15px auto;
 }
-.contentInfo > input{
+.contentInfo > input {
   height: 35px;
   margin: 0px auto 10px;
   width: 90%;
+  transition-duration: 1s;
 }
-.contentInfo > input[type='submit']{
+.contentInfo > input:focus {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+
+  outline: none;
+}
+.contentInfo > button {
+  margin: 0 auto;
+  outline-style: none;
+  width: 80%;
+  height: 35px;
   background-color: #007aff;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 1.1rem;
 }
 .contentInfo > .forgotPassword {

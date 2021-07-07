@@ -1,23 +1,8 @@
-import { useState } from 'react';
+import React from 'react';
 import Logged from './pages/Logged';
-import Login from './pages/Login'
-
-
+import PagesRoot from './pages/Root';
 function App() {
-  let [login, setLogin] = useState(true);
-
-  if (login){
-    return (
-      <Logged />
-    );
-  }
-  else{
-    return(
-      <>
-        <Login />
-      </>
-    )
-  }
+  return <Logged />;
 }
 
 export default App;
