@@ -1,0 +1,12 @@
+.contentLogo{
+  background-color: #0062cd;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentLogo > img{
+  width: 60%;
+}
