@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import StoreProvider from '../components/Store/Provider';
 import Clientes from '../components/pages/Clientes';
@@ -11,8 +11,10 @@ import Logo from '../components/Logo';
 import '../styles/Logged.css';
 import RoutesPrivate from '../components/Routes/Private/Private';
 import Login from '../components/pages/Login';
+import StoreContext from '../components/Store/Context';
 
 const Logged = () => {
+  const { setToken } = useContext(StoreContext);
   return (
     <Router>
       <StoreProvider>
@@ -24,7 +26,7 @@ const Logged = () => {
                 src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/07/neytiri_in_avatar_2-wide-do-we-really-need-avatar-2.jpeg"
                 alt="avatar.png"
               />
-              <p>Username</p>
+              <p className="UserAvatarName">Username</p>
             </div>
             <ul className="menu">
               <li>
@@ -56,6 +58,11 @@ const Logged = () => {
                 <Link to="/motivos" className="link">
                   Motivo
                 </Link>
+              </li>
+              <li>
+                <button type="button" onClick={() => setToken(null)}>
+                  Sair
+                </button>
               </li>
             </ul>
           </nav>
