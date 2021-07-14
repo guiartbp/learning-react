@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import StoreProvider from './components/Store/Provider';
 import RoutesPrivate from './components/Routes/Private/Private';
 import Home from './pages/Home/Home';
-import ClientesRoute from './pages/Clientes/ClientesRoute';
-import LoginRoute from './pages/Login/LoginRoute';
+import Login from './pages/Login/Login';
 import Logged from './pages/Logged';
 
 const App = () => {
@@ -12,7 +11,7 @@ const App = () => {
     <Router>
       <StoreProvider>
         <Switch>
-          <Route path="/login" component={LoginRoute} />
+          <Route path="/login" component={Login} />
           <RoutesPrivate path="/" exact component={Logged} />
         </Switch>
       </StoreProvider>

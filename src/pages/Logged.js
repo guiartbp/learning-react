@@ -1,17 +1,18 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import StoreProvider from '../components/Store/Provider';
-import Clientes from '../components/pages/Clientes';
-import Faq from '../components/pages/Faq';
-import HomeLogged from '../components/pages/HomeLogged';
-import Motivos from '../components/pages/Motivos';
-import Operadores from '../components/pages/Operadores';
-import TaxasTarifas from '../components/pages/TaxasTarifas';
 import Logo from '../components/Logo';
-import '../styles/Logged.css';
 import RoutesPrivate from '../components/Routes/Private/Private';
-import Login from '../components/pages/Login';
 import StoreContext from '../components/Store/Context';
+
+import '../styles/Logged.css';
+import Home from './Home/Home';
+import Clientes from './Clientes/Clientes';
+import TaxasTarifas from './TaxasTarifas/TaxasTarifas';
+import Faq from './Faq/Faq';
+import Operadores from './Operadores/Operadores';
+import Motivos from './Motivos/Motivos';
+import Login from './Login/Login';
 
 const Logged = () => {
   const { setToken } = useContext(StoreContext);
@@ -67,7 +68,7 @@ const Logged = () => {
             </ul>
           </nav>
           <Switch className="ContentFull">
-            <RoutesPrivate path="/" exact component={HomeLogged} />
+            <RoutesPrivate path="/" exact component={Home} />
             <RoutesPrivate path="/clientes" component={Clientes} />
             <RoutesPrivate path="/taxasetarifas" component={TaxasTarifas} />
             <RoutesPrivate path="/faq" component={Faq} />
