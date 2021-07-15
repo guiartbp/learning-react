@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PageName from '../../components/PageName/PageName';
 
 const Faq = () => {
-  return (
-    <h1>
-      Faq
-    </h1>
-  )
-}
-export default Faq
+  return <PageName name="FAQ" />;
+};
+export default Faq;

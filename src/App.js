@@ -5,6 +5,7 @@ import RoutesPrivate from './components/Routes/Private/Private';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Logged from './pages/Logged';
+import Layout from './pages/Layout';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Switch>
           <Route path="/login" component={Login} />
           <RoutesPrivate path="/" exact component={Logged} />
+          <RoutesPrivate path="/boots" component={Layout} />
         </Switch>
       </StoreProvider>
     </Router>

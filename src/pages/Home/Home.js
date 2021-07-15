@@ -1,6 +1,7 @@
 import React from 'react';
+import PageName from '../../components/PageName/PageName';
 
 const Home = () => {
-  return <h1>Home</h1>;
+  return <PageName name="Home" />;
 };
 export default Home;

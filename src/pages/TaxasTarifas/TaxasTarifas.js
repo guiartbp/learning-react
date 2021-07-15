@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PageName from '../../components/PageName/PageName';
 
 const TaxasTarifas = () => {
-  return (
-    <h1>
-      TaxasTarifas
-    </h1>
-  )
-}
-export default TaxasTarifas
+  return <PageName name="Taxas e Tarifas" />;
+};
+export default TaxasTarifas;

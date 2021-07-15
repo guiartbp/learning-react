@@ -7,32 +7,32 @@ const MainMenu = () => {
   return (
     <ul className="menu">
       <li>
-        <Link to="/" className="link">
+        <Link to="/boots/" className="link">
           Home
         </Link>
       </li>
       <li>
-        <Link to="/clientes" className="link">
+        <Link to="/boots/clientes" className="link">
           Clientes
         </Link>
       </li>
       <li>
-        <Link to="/taxasetarifas" className="link">
+        <Link to="/boots/taxasetarifas" className="link">
           Taxas e Tarifas
         </Link>
       </li>
       <li>
-        <Link to="/faq" className="link">
+        <Link to="/boots/faq" className="link">
           FAQ App
         </Link>
       </li>
       <li>
-        <Link to="/operadores" className="link">
+        <Link to="/boots/operadores" className="link">
           Operadores
         </Link>
       </li>
       <li>
-        <Link to="/motivos" className="link">
+        <Link to="/boots/motivos" className="link">
           Motivo
         </Link>
       </li>

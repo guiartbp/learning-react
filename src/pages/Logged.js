@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import StoreProvider from '../components/Store/Provider';
 import RoutesPrivate from '../components/Routes/Private/Private';
 
@@ -9,7 +9,6 @@ import TaxasTarifas from './TaxasTarifas/TaxasTarifas';
 import Faq from './Faq/Faq';
 import Operadores from './Operadores/Operadores';
 import Motivos from './Motivos/Motivos';
-import Login from './Login/Login';
 
 import '../styles/Logged.css';
 import MainSidebar from '../components/MainSidebar/MainSidebar';
@@ -27,10 +26,6 @@ const Logged = () => {
             <RoutesPrivate path="/faq" component={Faq} />
             <RoutesPrivate path="/operadores" component={Operadores} />
             <RoutesPrivate path="/motivos" component={Motivos} />
-
-            <Route path="/login">
-              <Login />
-            </Route>
           </Switch>
         </div>
       </StoreProvider>

@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import StoreContext from '../../components/Store/Context';
 import Logo from '../../components/Logo';
 import '../../styles/Login.css';
-import { Button } from 'reactstrap';
+import { Button } from 'react-bootstrap';
 
 function initialState() {
   return { email: '', password: '' };

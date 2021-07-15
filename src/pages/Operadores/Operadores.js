@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PageName from '../../components/PageName/PageName';
 
 const Operadores = () => {
-  return (
-    <h1>
-      Operadores
-    </h1>
-  )
-}
-export default Operadores
+  return <PageName name="Operadores" />;
+};
+export default Operadores;

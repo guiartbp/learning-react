@@ -1,4 +1,5 @@
 import React from 'react';
+import PageName from '../../components/PageName/PageName';
 import Tables from '../../components/Table/Tables';
 const Clientes = () => {
   const dados = [
@@ -101,6 +102,7 @@ const Clientes = () => {
   ];
   return (
     <>
+      <PageName name="Clientes" />
       <Tables dados={dados} />
     </>
   );

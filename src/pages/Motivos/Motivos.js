@@ -1,6 +1,7 @@
 import React from 'react';
+import PageName from '../../components/PageName/PageName';
 
 const Motivos = () => {
-  return <h1>Motivos</h1>;
+  return <PageName name="Motivos" />;
 };
 export default Motivos;

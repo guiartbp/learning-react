@@ -1,13 +1,12 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 import Head from './Head';
 import Row from './Row';
-
-import { Table } from 'reactstrap';
 
 const Tables = ({ dados }) => {
   const keys = Object.keys(dados[0]);
   return (
-    <Table striped>
+    <Table striped bordered hover>
       <Head keys={keys} />
       <tbody>
         {dados.map((record) => (
