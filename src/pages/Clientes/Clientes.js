@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from '../../components/Table/Table';
+import Tables from '../../components/Table/Tables';
 const Clientes = () => {
   const dados = [
     {
@@ -101,7 +101,7 @@ const Clientes = () => {
   ];
   return (
     <>
-      <Table dados={dados} />
+      <Tables dados={dados} />
     </>
   );
 };

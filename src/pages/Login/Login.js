@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import StoreContext from '../../components/Store/Context';
 import Logo from '../../components/Logo';
 import '../../styles/Login.css';
+import { Button } from 'reactstrap';
 
 function initialState() {
   return { email: '', password: '' };
@@ -65,7 +66,7 @@ const Login = () => {
             value={data.password}
             onChange={onChange}
           />
-          <button type="submit">Entrar</button>
+          <Button color="primary">Entrar</Button>
           <span className="forgotPassword">Esqueci minha senha</span>
         </div>
       </div>

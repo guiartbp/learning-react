@@ -1,18 +1,21 @@
 import React from 'react';
 import Head from './Head';
 import Row from './Row';
-const Table = ({ dados }) => {
+
+import { Table } from 'reactstrap';
+
+const Tables = ({ dados }) => {
   const keys = Object.keys(dados[0]);
   return (
-    <table>
+    <Table striped>
       <Head keys={keys} />
       <tbody>
         {dados.map((record) => (
           <Row record={record} />
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 
-export default Table;
+export default Tables;
